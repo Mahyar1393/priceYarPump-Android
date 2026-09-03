@@ -58,7 +58,13 @@ public class MainActivity extends AppCompatActivity {
     private void showMessage(String text) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
-    private String money(double value) {
+    private String money(double value) {    private void showMaterials() {
+        Toast.makeText(
+                this,
+                "قیمت مواد اولیه آماده تنظیم است",
+                Toast.LENGTH_SHORT
+        ).show();
+    }
         return String.format(Locale.US, "%,.0f", value);
      private double calculateSalePrice(double cost, double profitPercent) {
         return cost + (cost * profitPercent / 100.0);
