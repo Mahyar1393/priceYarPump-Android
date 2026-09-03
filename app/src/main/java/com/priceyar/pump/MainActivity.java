@@ -20,3 +20,16 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle b) {
+        db = Room.databaseBuilder(
+                getApplicationContext(),
+                AppDb.class,
+                "priceyar_pump.db"
+        ).build();
+
+        box = new LinearLayout(this);
+        box.setOrientation(LinearLayout.VERTICAL);
+        box.setPadding(12, 12, 12, 12);
+
+        ScrollView sv = new ScrollView(this);
+        sv.addView(box);
+        setContentView(sv);
