@@ -50,3 +50,11 @@ public class MainActivity extends AppCompatActivity {
         Button summaryBtn = new Button(this);
         summaryBtn.setText("لیست نهایی قیمت");
         box.addView(summaryBtn);
+        priceBtn.setOnClickListener(v -> showMessage("بخش قیمت مواد اولیه"));
+        modelBtn.setOnClickListener(v -> showMessage("بخش مدل‌های پمپ"));
+        summaryBtn.setOnClickListener(v -> showMessage("لیست نهایی قیمت"));
+    }
+
+    private void showMessage(String text) {
+        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+    }
