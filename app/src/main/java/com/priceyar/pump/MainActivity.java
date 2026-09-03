@@ -60,4 +60,6 @@ public class MainActivity extends AppCompatActivity {
     }
     private String money(double value) {
         return String.format(Locale.US, "%,.0f", value);
-    }
+     private double calculateSalePrice(double cost, double profitPercent) {
+        return cost + (cost * profitPercent / 100.0);
+    }   }
