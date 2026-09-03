@@ -33,3 +33,20 @@ public class MainActivity extends AppCompatActivity {
         ScrollView sv = new ScrollView(this);
         sv.addView(box);
         setContentView(sv);
+        TextView title = new TextView(this);
+        title.setText("قیمت‌یار پمپ");
+        title.setTextSize(24);
+        title.setPadding(16, 20, 16, 20);
+        box.addView(title);
+
+        Button priceBtn = new Button(this);
+        priceBtn.setText("قیمت مواد اولیه");
+        box.addView(priceBtn);
+
+        Button modelBtn = new Button(this);
+        modelBtn.setText("مدل‌های پمپ");
+        box.addView(modelBtn);
+
+        Button summaryBtn = new Button(this);
+        summaryBtn.setText("لیست نهایی قیمت");
+        box.addView(summaryBtn);
