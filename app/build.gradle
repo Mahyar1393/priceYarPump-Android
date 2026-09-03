@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.priceyar.pump'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.priceyar.pump'
+        minSdk 23
+        targetSdk 35
+        versionCode 41
+        versionName "4.1"
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.room:room-runtime:2.8.4'
+    annotationProcessor 'androidx.room:room-compiler:2.8.4'
+}
