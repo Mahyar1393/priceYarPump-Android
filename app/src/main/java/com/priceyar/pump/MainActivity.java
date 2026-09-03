@@ -14,3 +14,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+public class MainActivity extends AppCompatActivity {
+    private AppDb db;
+    private LinearLayout box;
+
+    @Override
+    protected void onCreate(Bundle b) {
