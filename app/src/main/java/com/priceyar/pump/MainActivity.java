@@ -58,3 +58,6 @@ public class MainActivity extends AppCompatActivity {
     private void showMessage(String text) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
+    private String money(double value) {
+        return String.format(Locale.US, "%,.0f", value);
+    }
